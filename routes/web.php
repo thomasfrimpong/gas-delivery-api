@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AdminController;
 use App\Http\Controllers\DeliveryController;
 use App\Http\Controllers\OrdersController;
 use Illuminate\Support\Facades\Route;
@@ -15,9 +16,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('starter');
-});
+Route::get('/dashboard', [AdminController::class, 'dashboard']);
 
 
 

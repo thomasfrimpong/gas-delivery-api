@@ -280,7 +280,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
             <!-- /.content-header -->
 
             <!-- Main content -->
-            <div class="content">
+            {{-- <div class="content">
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-lg-6">
@@ -357,7 +357,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
                     <!-- /.row -->
                 </div>
                 <!-- /.container-fluid -->
-            </div>
+            </div> --}}
+            @yield('content')
             <!-- /.content -->
         </div>
         <!-- /.content-wrapper -->
