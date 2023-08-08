@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Classes\Queries;
 use App\Classes\Response;
-
+use App\Http\Requests\AddExchangeRequest;
 use App\Http\Requests\AddOrderRequest;
 use App\Http\Requests\CancelOrderRequest;
 use App\Http\Requests\DeliveredByRequest;
@@ -12,7 +12,7 @@ use App\Http\Requests\NonDeliveryReasonRequest;
 use App\Http\Requests\OrderPaymentRequest;
 use App\Http\Requests\RegisterCustomerRequest;
 use App\Http\Requests\UpdateCustomerRequest;
-
+use App\Http\Requests\UpdateExchangeRequest;
 use App\Http\Requests\UpdateOrderRequest;
 use App\Http\Requests\UpdateOrderStatusRequest;
 
@@ -127,12 +127,45 @@ class DeliveryController extends Controller
         }
     }
 
+    public function addGasExchange(AddExchangeRequest $request)
+    {
+        try {
+            Queries::addExchange($request);
+            return Response::response(true, 'Exchange request done successfully.');
+        } catch (Exception $ex) {
+            Log::debug($ex->getMessage());
+            return Response::response(false, 'Something went wrong.');
+        }
+    }
 
+
+
+    public function updateGasExchange(UpdateExchangeRequest $request)
+    {
+        try {
+            Queries::updateExchange($request);
+            return Response::response(true, 'Exchange request updated successfully.');
+        } catch (Exception $ex) {
+            Log::debug($ex->getMessage());
+            return Response::response(false, 'Something went wrong.');
+        }
+    }
+
+    public function cancelgasExchange(CancelOrderRequest $request)
+    {
+        try {
+            Queries::cancelExchange($request);
+            return Response::response(true, 'Exchange request cancelled successfully.');
+        } catch (Exception $ex) {
+            Log::debug($ex->getMessage());
+            return Response::response(false, 'Something went wrong.');
+        }
+    }
 
     public function getOrdersPerArea(Request $request)
     {
 
-        return   Queries::getUserAreaOrders($request);
+        return   Queries::getDispatcherAreaOrders($request);
     }
 
     public function getCustomerOders($customer_id)

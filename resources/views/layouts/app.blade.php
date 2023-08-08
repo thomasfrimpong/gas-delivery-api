@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <!--
 This is a starter template page. Use this page to start your new project from
@@ -8,14 +9,17 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>AdminLTE 3 | Starter</title>
+    <title>Admin Portal</title>
 
     <!-- Google Font: Source Sans Pro -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback" />
     <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="/css/all.min.css" />
     <!-- Theme style -->
-    <link rel="stylesheet" href="css/adminlte.min.css" />
+    <link rel="stylesheet" href="/css/adminlte.min.css" />
+    <link rel="stylesheet" href="/css/bootstrap-4.min.css" />
+    <link rel="stylesheet" href="/css/toastr.min.css" />
+  
 </head>
 
 <body class="hold-transition sidebar-mini">
@@ -69,7 +73,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                         <a href="#" class="dropdown-item">
                             <!-- Message Start -->
                             <div class="media">
-                                <img src="dist/img/user1-128x128.jpg" alt="User Avatar" class="img-size-50 mr-3 img-circle" />
+                                {{-- <img src="dist/img/user1-128x128.jpg" alt="User Avatar" class="img-size-50 mr-3 img-circle" /> --}}
                                 <div class="media-body">
                                     <h3 class="dropdown-item-title">
                                         Brad Diesel
@@ -179,7 +183,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
         <aside class="main-sidebar sidebar-dark-primary elevation-4">
             <!-- Brand Logo -->
             <a href="index3.html" class="brand-link">
-                <img src="dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: 0.8" />
+                {{-- <img src="dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: 0.8" /> --}}
                 <span class="brand-text font-weight-light">AdminLTE 3</span>
             </a>
 
@@ -188,64 +192,38 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 <!-- Sidebar user panel (optional) -->
                 <div class="user-panel mt-3 pb-3 mb-3 d-flex">
                     <div class="image">
-                        <img src="dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image" />
+                        {{-- <img src="dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image" /> --}}
                     </div>
                     <div class="info">
                         <a href="#" class="d-block">Alexander Pierce</a>
                     </div>
                 </div>
 
-                <!-- SidebarSearch Form -->
-                <div class="form-inline">
-                    <div class="input-group" data-widget="sidebar-search">
-                        <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search" />
-                        <div class="input-group-append">
-                            <button class="btn btn-sidebar">
-                                <i class="fas fa-search fa-fw"></i>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Sidebar Menu -->
-                <nav class="mt-2">
+                
+                 {{-- <nav class="mt-2">
                     <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-                        <!-- Add icons to the links using the .nav-icon class
-               with font-awesome or any other icon font library -->
-                        <li class="nav-item menu-open">
+                    
+                        <li class="nav-item">
                             <a href="#" class="nav-link active">
-                                <i class="nav-icon fas fa-tachometer-alt"></i>
+                                <i class="nav-icon fas fa-link"></i>
                                 <p>
-                                    Starter Pages
-                                    <i class="right fas fa-angle-left"></i>
+                                    Simple Link
+                                  
                                 </p>
                             </a>
-                            <ul class="nav nav-treeview">
-                                <li class="nav-item">
-                                    <a href="#" class="nav-link active">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Active Page</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="#" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Inactive Page</p>
-                                    </a>
-                                </li>
-                            </ul>
                         </li>
                         <li class="nav-item">
                             <a href="#" class="nav-link">
-                                <i class="nav-icon fas fa-th"></i>
+                                <i class="nav-icon fas fa-link"></i>
                                 <p>
                                     Simple Link
-                                    <span class="right badge badge-danger">New</span>
+                                    
                                 </p>
                             </a>
                         </li>
                     </ul>
-                </nav>
+                </nav> 
+               
                 <!-- /.sidebar-menu -->
             </div>
             <!-- /.sidebar -->
@@ -254,8 +232,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
         <!-- Content Wrapper. Contains page content -->
         <div class="content-wrapper">
             <!-- Content Header (Page header) -->
-            <div class="content-header">
-                <div class="container-fluid">
+             <div class="content-header">
+                {{-- <div class="container-fluid">
                     <div class="row mb-2">
                         <div class="col-sm-6">
                             <h1 class="m-0">Starter Page</h1>
@@ -274,90 +252,12 @@ scratch. This page gets rid of all links and provides the needed markup only.
                         <!-- /.col -->
                     </div>
                     <!-- /.row -->
-                </div>
-                <!-- /.container-fluid -->
-            </div>
-            <!-- /.content-header -->
+                </div> --}}
+                <!-- /.container-fluid 
+            </div>  --}}
+            /.content-header -->
 
-            <!-- Main content -->
-            {{-- <div class="content">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="card">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-
-                                    <p class="card-text">
-                                        Some quick example text to build on
-                                        the card title and make up the bulk
-                                        of the card's content.
-                                    </p>
-
-                                    <a href="#" class="card-link">Card link</a>
-                                    <a href="#" class="card-link">Another link</a>
-                                </div>
-                            </div>
-
-                            <div class="card card-primary card-outline">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-
-                                    <p class="card-text">
-                                        Some quick example text to build on
-                                        the card title and make up the bulk
-                                        of the card's content.
-                                    </p>
-                                    <a href="#" class="card-link">Card link</a>
-                                    <a href="#" class="card-link">Another link</a>
-                                </div>
-                            </div>
-                            <!-- /.card -->
-                        </div>
-                        <!-- /.col-md-6 -->
-                        <div class="col-lg-6">
-                            <div class="card">
-                                <div class="card-header">
-                                    <h5 class="m-0">Featured</h5>
-                                </div>
-                                <div class="card-body">
-                                    <h6 class="card-title">
-                                        Special title treatment
-                                    </h6>
-
-                                    <p class="card-text">
-                                        With supporting text below as a
-                                        natural lead-in to additional
-                                        content.
-                                    </p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                                </div>
-                            </div>
-
-                            <div class="card card-primary card-outline">
-                                <div class="card-header">
-                                    <h5 class="m-0">Featured</h5>
-                                </div>
-                                <div class="card-body">
-                                    <h6 class="card-title">
-                                        Special title treatment
-                                    </h6>
-
-                                    <p class="card-text">
-                                        With supporting text below as a
-                                        natural lead-in to additional
-                                        content.
-                                    </p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- /.col-md-6 -->
-                    </div>
-                    <!-- /.row -->
-                </div>
-                <!-- /.container-fluid -->
-            </div> --}}
+           
             @yield('content')
             <!-- /.content -->
         </div>
@@ -385,9 +285,189 @@ scratch. This page gets rid of all links and provides the needed markup only.
             All rights reserved.
         </footer>
     </div>
+{{-- ADD ADMIN MODAL --}}
+<div class="modal fade" id="add-admin-modal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Add Admin</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <form class="form-horizontal"  method="post" action="/add/admin">
+        <div class="modal-body">
+         
+       
+            <div class="form-group row">
+                <label for="inputEmail3" class="col-sm-2 col-form-label">First Name</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="" placeholder="" name="first_name" required>
+                </div>
+              </div>
+              @csrf
+              <div class="form-group row">
+                <label for="inputPassword3" class="col-sm-2 col-form-label">Last Name</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="" placeholder="" name='last_name' required>
+                </div>
+              </div>
+              <div class="form-group row">
+                  <label for="inputPassword3" class="col-sm-2 col-form-label">Phone Number</label>
+                  <div class="col-sm-10">
+                    <input type="number" class="form-control" id="" name="phone_number" placeholder="" required>
+                  </div>
+                </div>
+                <div class="form-group row">
+                    <label for="inputPassword3" class="col-sm-2 col-form-label">Email</label>
+                    <div class="col-sm-10">
+                      <input type="text" class="form-control" id="" name="email" placeholder="" required>
+                    </div>
+                  </div>
+          
+        </div>
+        <div class="modal-footer justify-content-between">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="submit" class="btn btn-info">Save changes</button>
+        </div>
+    </form>
+      </div>
+      <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+  </div>
+  <!-- /.modal -->
+
+
+
     <!-- ./wrapper -->
+    <div class="modal fade" id="modal-default">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">Add Dispatcher</h4>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <form class="form-horizontal"  method="post" action="/add-dispatcher">
+                    <div class="card-body">
+                      <div class="form-group row">
+                        <label for="inputEmail3" class="col-sm-2 col-form-label">First Name</label>
+                        <div class="col-sm-10">
+                          <input type="text" class="form-control" id="" placeholder="First Name" name="first_name" required>
+                        </div>
+                      </div>
+                      @csrf
+                      <div class="form-group row">
+                        <label for="inputPassword3" class="col-sm-2 col-form-label">Last Names</label>
+                        <div class="col-sm-10">
+                          <input type="text" class="form-control" id="" placeholder="Last Names" name='last_name' required>
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                          <label for="inputPassword3" class="col-sm-2 col-form-label">Phone Number</label>
+                          <div class="col-sm-10">
+                            <input type="number" class="form-control" id="" name="phone_number" placeholder="Phone Number" required>
+                          </div>
+                        </div>
+                        
+                        <div class="form-group row">
+                          <label for="inputPassword3" class="col-sm-2 col-form-label">Area Of Operation</label>
+                          <div class="col-sm-10">
+                              <select multiple class="form-control" name="area_of_operation[]">
+                                  <option>option 1</option>
+                                  <option>option 2</option>
+                                  <option>option 3</option>
+                                  <option>option 4</option>
+                                  <option>option 5</option>
+                                </select>
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                          <label for="inputPassword3" class="col-sm-2 col-form-label">Email</label>
+                          <div class="col-sm-10">
+                            <input type="text" class="form-control" id="" name="email" placeholder="Email">
+                          </div>
+                        </div>
+                     
+                    </div>
+                    <!-- /.card-body -->
+                    <div class="card-footer">
+                      <button type="submit" class="btn btn-block btn-info">Submit Form</button>
+                      {{-- <button type="submit" class="btn btn-default float-right">Cancel</button> --}}
+                    </div>
+                    <!-- /.card-footer -->
+                  </form>
+
+            </div>
+            <div class="modal-footer justify-content-between">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+          <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+      </div>
+      <!-- /.modal -->
 
     <!-- REQUIRED SCRIPTS -->
+    {{-- ADD CYLINDER MODAL --}}
+    <div class="modal fade" id="add-cylinder-modal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">Default Modal</h4>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <form class="form-horizontal"  method="post" action="/add/cylinder">
+            <div class="modal-body">
+              
+              
+                <div class="card-body">
+                  <div class="form-group row">
+                    <label for="inputEmail3" class="col-sm-2 col-form-label">Size Of Cylinder</label>
+                    <div class="col-sm-10">
+                      <input type="number" class="form-control" id="" placeholder="Size Of Cylinder" name="size_of_cylinder" required>
+                    </div>
+                  </div>
+                  @csrf
+                  <div class="form-group row">
+                    <label for="inputPassword3" class="col-sm-2 col-form-label">Cost Per Unit</label>
+                    <div class="col-sm-10">
+                      <input type="number" class="form-control" id="" placeholder="Cost Per Unit" name='cost_per_unit' required>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                      <label for="inputPassword3" class="col-sm-2 col-form-label">Units Available</label>
+                      <div class="col-sm-10">
+                        <input type="number" class="form-control" id="" name="number_of_units" placeholder="Units Available" required>
+                      </div>
+                    </div>
+                    
+                  
+                </div>
+                <!-- /.card-body -->
+                
+             
+            </div>
+            <div class="modal-footer justify-content-between">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              <button type="submit" class="btn btn-info">Save changes</button>
+            </div>
+        
+          {{-- </div> --}}
+        </form>
+          <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+      </div>
+
+
 
     <!-- jQuery -->
     <script src="/js/jquery.min.js"></script>
@@ -395,6 +475,58 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <script src="/js/bootstrap.bundle.min.js"></script>
     <!-- AdminLTE App -->
     <script src="/js/adminlte.min.js"></script>
+    {{-- <script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script> --}}
+<!-- DataTables  & Plugins -->
+<script src="/plugins/datatables/jquery.dataTables.min.js"></script>
+<script src="/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+<script src="/plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
+<script src="/plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+<script src="/plugins/datatables-buttons/js/dataTables.buttons.min.js"></script>
+<script src="/plugins/datatables-buttons/js/buttons.bootstrap4.min.js"></script>
+{{-- <script src="/plugins/jszip/jszip.min.js"></script> --}}
+{{-- <script src="/plugins/pdfmake/pdfmake.min.js"></script> --}}
+<script src="/plugins/pdfmake/vfs_fonts.js"></script>
+<script src="/plugins/datatables-buttons/js/buttons.html5.min.js"></script>
+<script src="/plugins/datatables-buttons/js/buttons.print.min.js"></script>
+<script src="/plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
+<script src="/js/toastr.min.js"></script>
+<script src="/js/sweetalert2.min.js"></script>
+    <script>
+        $(function () {
+      
+
+          $("#example1").DataTable({
+            "responsive": true, "lengthChange": false, "autoWidth": false,
+            "buttons": ["copy", "csv", "excel", "pdf", "print", "colvis"]
+          }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
+          $('#example2').DataTable({
+            "paging": true,
+            "lengthChange": false,
+            "searching": false,
+            "ordering": true,
+            "info": true,
+            "autoWidth": false,
+            "responsive": true,
+          });
+
+
+          var Toast = Swal.mixin({
+      toast: true,
+      position: 'top-end',
+      showConfirmButton: false,
+      timer: 3000
+    });
+
+      
+        $('.swalDefaultSuccess').click(function() {
+      Toast.fire({
+        icon: 'success',
+        title: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr.'
+      })
+    });
+
+  });
+      </script> 
 </body>
 
 </html>

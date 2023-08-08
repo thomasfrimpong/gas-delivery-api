@@ -3,13 +3,12 @@
 namespace App\Http\Requests;
 
 
+
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Contracts\Validation\Validator;
 use Illuminate\Http\Exceptions\HttpResponseException;
-use Illuminate\Http\JsonResponse;
-use Illuminate\Validation\ValidationException;
 
-class CreateUserRequest extends FormRequest
+class UpdateDispatcherRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -30,23 +29,25 @@ class CreateUserRequest extends FormRequest
     {
         return [
             //
+            'dispatcher_id' => 'required',
             "first_name" => 'required',
-            "other_names" => 'required',
+            "last_name" => 'required',
             'phone_number' => 'required',
             'role' => 'required',
-            "area_of_operation" => 'nullable',
-            "email" => 'required|email'
+            "area_of_operation" => 'required',
+            "email" => 'required'
         ];
     }
 
     public function messages()
     {
         return [
+            'dispatcher_id' => 'The user id is required',
+            'first_name' => 'The first name is required',
+            'last_name' => 'The other names is required',
+            'phone_number' => 'The phone number is required',
             "email.required" => 'The email is required',
             "email.email" => 'The email is not valid',
-            "area_of_operation" => 'The area of operation is required',
-            'role' => 'The role is required',
-
 
         ];
     }

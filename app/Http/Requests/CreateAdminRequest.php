@@ -2,13 +2,13 @@
 
 namespace App\Http\Requests;
 
-
-
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Contracts\Validation\Validator;
 use Illuminate\Http\Exceptions\HttpResponseException;
+use Illuminate\Http\JsonResponse;
+use Illuminate\Validation\ValidationException;
 
-class UpdateUserRequest extends FormRequest
+class CreateAdminRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -29,25 +29,23 @@ class UpdateUserRequest extends FormRequest
     {
         return [
             //
-            'user_id' => 'required',
             "first_name" => 'required',
-            "other_names" => 'required',
+            "last_name" => 'required',
             'phone_number' => 'required',
-            'role' => 'required',
-            "area_of_operation" => 'required',
-            "email" => 'required'
+
+            "email" => 'required|email'
         ];
     }
 
     public function messages()
     {
         return [
-            'user_id' => 'The user id is required',
-            'first_name' => 'The first name is required',
-            'other_names' => 'The other names is required',
-            'phone_number' => 'The phone number is required',
             "email.required" => 'The email is required',
             "email.email" => 'The email is not valid',
+            'first_name' => 'The first name is required',
+            'last_name' => 'The other names is required',
+            'phone_number' => 'The phone number is required',
+
 
         ];
     }
